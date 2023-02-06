@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EzFood</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <article class="head-sec">
+            <header>
+                <h1 class="mt-0">
+                    <a class="title" href="index.html">EzFood</a>
+                </h1>
+                <input type="checkbox" id="check">
+                <label for="check" class="burger-cont">
+                    <div class="burger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </label>
+            </header>
+            <nav>
+                <ul class="free-ul">
+                    <li class="d-inline"><a class="nav-text">Menu one</a></li>
+                    <li class="d-inline"><a class="nav-text">Menu two</a></li>
+                    <li class="d-inline"><a class="nav-text">Menu three</a></li>
+                    <li class="d-inline"><a class="nav-text">Our services</a></li>
+                </ul>
+                <ul class="free-ul mt-1 mb-1">
+                    <li class="d-inline contrast"><a class="nav-text-2">Order</a></li>
+                </ul>    
+            </nav>
+            <div class="promo">
+                <div class="grid-promo-1">
+                    <img class="promo-img" src="/public/Pizza.png" alt="Delicius Pizza">
+                </div>
+                <div class="promo-cont">
+                    <div class="grid-promo-2">
+                        <h3>$20</h3>
+                        American
+                    </div>
+                    <div class="grid-promo-3">
+                        <h3>$15</h3>
+                        British
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="menu-sec">
+            <div class="row mb-1">
+                <div class="card">
+                    <img  class="object-fit" src="/public/hawaiian-pizza.jpg" alt="Hawaiian-pizza">
+                    <div class="card-cont">
+                      <h4><b>Hawaiian</b></h4>
+                      <p>$10</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img  class="object-fit" src="/public/Salad.jpg" alt="Salad">
+                    <div class="card-cont">
+                      <h4><b>Salad</b></h4>
+                      <p>$8</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img  class="object-fit" src="/public/Spaghetti.jpg" alt="Spaghetti">
+                    <div class="card-cont">
+                      <h4><b>Spaghetti</b></h4>
+                      <p>$10</p>    
+                    </div>
+                </div>
+                <div class="card">
+                    <img  class="object-fit" src="/public/Hamburger.jpg" alt="Hamburger">
+                    <div class="card-cont">
+                      <h4><b>Hamburger</b></h4>
+                      <p>$10</p>
+                    </div>
+                </div>    
+            </div>
+            <div class="large-card">
+                <img  class="object-fit-2" src="/public/Taco.png" alt="Taco">
+                <div class="card-cont-2">
+                  <h4><b>Featured Taco</b></h4>
+                  <p>Slim profile easte to hold and loaded with cheese</p>
+                  <p>This is one you have been waiting for</p>
+                  <button class="card-btn">Learn more</button>
+                </div>
+            </div>
+        </article>
+        <article class="image-sec">
+            <div class="title-with-lines">
+                <h2>Our specialties</h2>
+            </div>
+            <div class="row-2">
+                <div class="column">
+                    <img class="object-fit-3" src="/public/Promo1.jpg" alt="Promo1">
+                </div>
+                <div class="column">
+                    <img class="object-fit-3" src="/public/promo2.webp" alt="promo2">
+                </div>
+                <div class="column">
+                    <img class="object-fit-3" src="/public/promo3.jpeg" alt="promo3">
+                </div>
+                <div class="column">
+                    <img class="object-fit-3" src="/public/promo4.jpg" alt="promo4">
+                </div>
+                <div class="column">
+                    <img class="object-fit-3" src="/public/promo5.jpg" alt="promo5">
+                </div>
+                <div class="column">
+                    <img class="object-fit-3" src="/public/promo6.jpg" alt="promo6">
+                </div>
+                <div class="column">
+                    <img class="object-fit-3" src="/public/promo7.jpg" alt="promo7">
+                </div>
+                <div class="column">
+                    <img class="object-fit-3" src="/public/promo8.jpg" alt="promo8">
+                </div>
+                <div class="column">
+                    <img class="object-fit-3" src="/public/promo9.webp" alt="promo9">
+                </div>
+                <div class="column">
+                    <img class="object-fit-3" src="/public/promo10.jpg" alt="promo10">
+                </div>
+            </div>
+        </article>
+        <footer class="footer-sec">
+            © Alejandro Román - 2023
+        </footer>
+        <script>
+            const checkbox = document.querySelector('#check');
+            const burger = document.querySelector('.burger');
+
+            checkbox.addEventListener('click', () => {
+                burger.classList.toggle('active');
+            });
+        </script>
+    </body>
+</html>
